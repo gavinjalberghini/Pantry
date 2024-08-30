@@ -1,3 +1,11 @@
+---
+name: Story Board
+about: Request a new pattern/usecase.
+title: '[STORY BOARD]: '
+labels: 'documentation'
+assignees: 'gavinjalberghini'
+---
+
 ## User story
 **As a [role],**
 **I want [an action or feature],**
