@@ -1,0 +1,50 @@
+name: Feature
+description: Make a feature request.
+title: "[FEATURE]: "
+labels: ["enhancement"]
+projects: ["gavinjalberghini/8"]
+assignees:
+  - gavinjalberghini
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make a feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: associated_storyboard
+    attributes:
+      label: Associated Storyboard
+      description: Please provide a link and reference to the associated storyboard, if any. Note that feature requests not belonging to an accepted stroyboard are subject to higher scruteny
+    validations:
+      required: false
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: What is the intended function of the feature?
+      description: What problem are we solving by implementing this feature?
+      placeholder: Insert awesome feature idea here 🎉
+      value: "Motivation: (Can link to Storyboard here)\n\nDescription:\n\nValue Proposition:\n\nAcceptance Criteria:"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Implementation Suggestions
+      description: Feel free to make code suggestions for this feature request. This box will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/gavinjalberghini/Pantry/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

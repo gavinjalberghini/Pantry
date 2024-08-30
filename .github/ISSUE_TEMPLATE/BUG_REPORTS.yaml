@@ -1,8 +1,8 @@
 name: Bug Report
 description: File a bug report.
-title: "[Bug]: "
+title: "[BUG]: "
 labels: ["bug"]
-projects: ["Bugs in the Pantry 🐛"]
+projects: ["gavinjalberghini/7"]
 assignees:
   - gavinjalberghini
 body:
@@ -24,7 +24,7 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "Expected Behaviour:\nActual Behaviour:"
+      value: "Expected Behaviour:\n\nActual Behaviour:"
     validations:
       required: true
   - type: textarea
@@ -33,7 +33,7 @@ body:
       label: What is your environment?
       description: Please provide any insightful information about your setup.
       placeholder: Tell us what you see!
-      value: "OS:\nRAM:\nCPU:\nSoftware Versions:"
+      value: "OS:\n\nSoftware Versions:"
     validations:
       required: true
   - type: textarea
