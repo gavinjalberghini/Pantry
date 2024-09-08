@@ -22,7 +22,7 @@ jobs:
           change_path: "docs"
           tag_prefix: "v"
           major_pattern: "break:"
-          minor_pattern: "/^(feat:|fix:|chore:)/"
+          minor_pattern: "/^(feat\\(|fix\\(|chore\\()/"
           version_format: "${major}.${minor}.${patch}"
 
       - name: Infrastructure Version
@@ -32,5 +32,5 @@ jobs:
           change_path: "config"
           tag_prefix: "v"
           major_pattern: "break:"
-          minor_pattern: "/^(docs:|chore:)/"
+          minor_pattern: "/^(docs\\(|chore\\()/"
           version_format: "${major}.${minor}.${patch}"
