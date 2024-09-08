@@ -20,9 +20,17 @@ jobs:
         uses: paulhatch/semantic-version@v5.4.0
         with:
           change_path: "docs"
+          tag_prefix: "v"
+          major_pattern: "break:"
+          minor_pattern: "/^(feat:|fix:|chore:)/"
+          version_format: "${major}.${minor}.${patch}"
 
       - name: Infrastructure Version
         id: infra-version
         uses: paulhatch/semantic-version@v5.4.0
         with:
           change_path: "config"
+          tag_prefix: "v"
+          major_pattern: "break:"
+          minor_pattern: "/^(docs:|chore:)/"
+          version_format: "${major}.${minor}.${patch}"
