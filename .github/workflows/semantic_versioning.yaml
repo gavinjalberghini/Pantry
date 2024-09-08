@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  release:
+  update-semantic-version:
     runs-on: [self-hosted, Linux, X64, wsl, desktop-1]
 
     steps:
