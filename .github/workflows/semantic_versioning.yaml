@@ -21,9 +21,11 @@ jobs:
         with:
           change_path: "docs"
           tag_prefix: "v"
-          major_pattern: "break:"
-          minor_pattern: "/^(feat\\(|fix\\(|chore\\()/"
-          version_format: "${major}.${minor}.${patch}"
+          major_pattern: "/^(break)/"
+          minor_pattern: "/^(docs|chore)/"
+          version_format: "v${major}.${minor}.${patch}"
+          bump_each_commit: true
+          bump_each_commit_patch_pattern: "/^(feat|fix|chore|refactor|perf|test|docs|style)/"
 
       - name: Infrastructure Version
         id: infra-version
@@ -31,6 +33,8 @@ jobs:
         with:
           change_path: "config"
           tag_prefix: "v"
-          major_pattern: "break:"
-          minor_pattern: "/^(docs\\(|chore\\()/"
-          version_format: "${major}.${minor}.${patch}"
+          major_pattern: "/^(break)/"
+          minor_pattern: "/^(feat|fix|chore)/"
+          version_format: "v${major}.${minor}.${patch}"
+          bump_each_commit: true
+          bump_each_commit_patch_pattern: "/^(feat|fix|chore|refactor|perf|test|docs|style)/"
