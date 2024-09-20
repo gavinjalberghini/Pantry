@@ -30,3 +30,8 @@ sops --encrypt sec.yaml > sec.enc.yaml
 ```
 sops --decrypt sec.enc.yaml > sec.yaml
 ```
+
+## Get Fingerprint
+```
+gpg --fingerprint (key_name) | awk 'NR==2 {print $1$2$3$4$5$6$7$8$9$10}'
+```
