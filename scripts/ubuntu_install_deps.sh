@@ -90,3 +90,6 @@ notify "Installing sops..."
 curl -SsLO https://github.com/mozilla/sops/releases/download/v3.7.3/sops-v3.7.3.$(uname | tr '[:upper:]' '[:lower:]').$(dpkg --print-architecture)
 sudo mv -f sops-v3.7.3.$(uname |  tr '[:upper:]' '[:lower:]').$(dpkg --print-architecture) /usr/local/bin/sops
 sudo chmod +x /usr/local/bin/sops
+
+notify "Installing sdm..."
+curl -L https://raw.githubusercontent.com/gitbls/sdm/master/EZsdmInstaller | bash
