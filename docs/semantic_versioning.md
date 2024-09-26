@@ -17,3 +17,5 @@
 | test | Adding missing or correcting existing tests |
 | chore | Changes to the build process or auxiliary tools and libraries such as documentation generation |
 | break | A breaking change, which prox a new major version |
+
+For information about the GH action for semantic versioning, see the guild available [here](https://github.com/PaulHatch/semantic-version/blob/master/guide.md).
