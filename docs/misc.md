@@ -4,6 +4,19 @@
 ```
 curl -sLS https://get.k3sup.dev | sh
 sudo install k3sup /usr/local/bin/
+IP=$(hostname -i | awk '{print $2}')
+mkdir ~/.kube
+touch ~/.kube/config
+k3sup install --ip $IP --user $USER --no-extras --local --local-path ~/.kube/config --merge
+```
+
+### Local K3s Shutdown & Clear
+```
+# stop
+sudo systemctl stop k3s
+
+# clear
+/usr/local/bin/k3s-killall.sh
 ```
 
 ### Raw Pi Config Changes
