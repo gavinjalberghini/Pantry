@@ -19,6 +19,12 @@ sudo systemctl stop k3s
 /usr/local/bin/k3s-killall.sh
 ```
 
+### Remote Join K3s Cluster (k3sup)
+```
+TBD
+TODO: Configure Lima VM to see network of the host machine.
+```
+
 ### Raw Pi Config Changes
 ```
 sshpass -p xxxxxxxxxx ssh xxxxx@xxx.xxx.xxx.xxx "echo ' cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory' | sudo tee -a /boot/firmware/cmdline.txt"
