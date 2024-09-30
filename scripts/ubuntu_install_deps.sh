@@ -95,4 +95,7 @@ notify "Installing sdm..."
 curl -L https://raw.githubusercontent.com/gitbls/sdm/master/EZsdmInstaller | bash
 
 notify "Installing sshpass..."
-sudo apt install sshpass
+sudo apt install sshpass -y
+
+notify "Installing arp-scan..."
+sudo apt install arp-scan -y
