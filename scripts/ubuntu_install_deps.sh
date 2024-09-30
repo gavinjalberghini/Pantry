@@ -93,3 +93,6 @@ sudo chmod +x /usr/local/bin/sops
 
 notify "Installing sdm..."
 curl -L https://raw.githubusercontent.com/gitbls/sdm/master/EZsdmInstaller | bash
+
+notify "Installing sshpass..."
+sudo apt install sshpass
